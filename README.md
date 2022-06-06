@@ -56,6 +56,8 @@ wget -nc -P code/data/ https://archive.org/download/stackexchange/ai.stackexchan
 
 # start container with Jupyter notebook server
 docker run -p 8888:8888 -p 4040:4040 -v ${pwd}:/home/jovyan/ spark-live
+
+(localhost:4040 we can find spark running by opening in browser...)
 ```
 
 Then open a web browser to the URL it spits out (the Jupyter server in the container uses [token authentication](https://jupyter-notebook.readthedocs.io/en/stable/security.html))
